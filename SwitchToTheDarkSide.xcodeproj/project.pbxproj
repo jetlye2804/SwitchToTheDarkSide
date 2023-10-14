@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -326,6 +326,7 @@
 				DEVELOPMENT_TEAM = GGXD5E6AF8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwitchToTheDarkSide/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,6 +348,7 @@
 				DEVELOPMENT_TEAM = GGXD5E6AF8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwitchToTheDarkSide/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

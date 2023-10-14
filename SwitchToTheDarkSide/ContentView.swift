@@ -9,12 +9,19 @@ import Introspect
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showingSheet = false
 	var body: some View {
 		VStack {
 			Text("Appearance")
 				.font(.title)
 			AppearanceSelectionPicker()
 				.padding()
+            Button("Show Sheet") {
+                showingSheet.toggle()
+            }
+            .sheet(isPresented: $showingSheet) {
+                SheetView()
+            }
 		}
 	}
 }
@@ -27,6 +34,18 @@ enum Appearance: LocalizedStringKey, CaseIterable, Identifiable {
 	case automatic
 
 	var id: String { UUID().uuidString }
+}
+
+struct SheetView: View {
+    @Environment(\.dismiss) var dismiss
+
+    var body: some View {
+        Button("Press to dismiss") {
+            dismiss()
+        }
+        .font(.title)
+        .padding()
+    }
 }
 
 
